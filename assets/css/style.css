@@ -1050,6 +1050,9 @@ section {
 
 .team .member .pic img {
   transition: ease-in-out 0.3s;
+  width: 100%;
+height: auto;
+object-fit: cover;
 }
 
 .team .member:hover {
