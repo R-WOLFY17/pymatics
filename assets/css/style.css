@@ -969,13 +969,13 @@ section {
 
 .portfolio .portfolio-item {
   margin-bottom: 30px;
-  max-width:100%;
+  max-width:auto;
   height:auto;
 }
 
 .portfolio .portfolio-item .portfolio-img {
   overflow: hidden;
-  max-width:100%;
+  max-width:auto;
   height:auto;
 }
 
