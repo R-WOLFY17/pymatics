@@ -7,15 +7,17 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>PHYMATICS CHAMPIONS CLUB</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta content="Phymatics Champions Club - Knowledge is Power" name="description">
+  <meta content="Physics, Mathematics, Club, Discussion, Education" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Google Fonts & Modern Aesthetics -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,25 +27,378 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-   <link rel="stylesheet"
-   href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-	<style>
-		i{
-			font-size:30px;
-			color:#333;
-			margin:0 10px;
-		}
-	</style>
 
-  <!-- =======================================================
-  * Template Name: phymatics champions club - v2.3.1
-  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    /* Modern Premium Custom Styles */
+    :root {
+      --primary-color: #0d945a;
+      /* Emerald */
+      --primary-dark: #075f39;
+      --secondary-color: #0b2239;
+      /* Deep Navy */
+      --accent-color: #f7a52c;
+      /* Vibrant Orange Accent */
+      --text-main: #e2e8f0;
+      --text-muted: #94a3b8;
+      --bg-dark: #081525;
+      --bg-card: rgba(15, 33, 55, 0.7);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Outfit', sans-serif;
+      color: #ffffff;
+    }
+
+    /* Override Header */
+    #header {
+      background: rgba(8, 21, 37, 0.85);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    #header .logo a {
+      color: var(--primary-color);
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    #header .logo span {
+      color: #fff;
+    }
+
+    .nav-menu a {
+      color: var(--text-main);
+      font-weight: 500;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+
+    .nav-menu a:hover,
+    .nav-menu .active>a,
+    .nav-menu li:hover>a {
+      color: var(--primary-color) !important;
+    }
+
+    .get-started-btn {
+      background: var(--primary-color);
+      border: none !important;
+      color: #fff !important;
+      box-shadow: 0 4px 15px rgba(13, 148, 90, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .get-started-btn:hover {
+      background: var(--primary-dark) !important;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(13, 148, 90, 0.4);
+    }
+
+    /* Hero Section Overhaul */
+    #hero {
+      background: linear-gradient(135deg, var(--secondary-color) 0%, var(--bg-dark) 100%);
+      position: relative;
+      overflow: hidden;
+      padding: 120px 0 80px 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+
+    #hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('assets/img/hero-bg-pattern.svg') center/cover opacity(0.05);
+      pointer-events: none;
+    }
+
+    .hero-glass-badge {
+      display: inline-block;
+      padding: 8px 16px;
+      background: rgba(13, 148, 90, 0.15);
+      border: 1px solid rgba(13, 148, 90, 0.3);
+      border-radius: 50px;
+      color: var(--primary-color);
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 25px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    #hero h1 {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      background: linear-gradient(to right, #ffffff, #a5b4fc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fadeInUp 1s ease-out 0.2s both;
+    }
+
+    #hero h2 {
+      font-size: 20px;
+      color: var(--text-muted);
+      font-weight: 400;
+      line-height: 1.6;
+      margin-bottom: 40px;
+      animation: fadeInUp 1s ease-out 0.4s both;
+    }
+
+    .hero-subject-pills {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 40px;
+      animation: fadeInUp 1s ease-out 0.6s both;
+    }
+
+    .subject-pill {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 10px 20px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      backdrop-filter: blur(5px);
+      transition: all 0.3s ease;
+    }
+
+    .subject-pill:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-3px);
+      border-color: var(--primary-color);
+    }
+
+    .subject-pill i {
+      color: var(--primary-color);
+      font-size: 20px;
+    }
+
+    #hero .hero-img img {
+      filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.5));
+      border-radius: 20px;
+      transform: perspective(1000px) rotateY(-15deg) rotateX(5deg);
+      transition: all 0.5s ease;
+    }
+
+    #hero .hero-img:hover img {
+      transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+    }
+
+    /* Section Global Updates */
+    .section-bg {
+      background-color: var(--secondary-color) !important;
+    }
+
+    .section-title h2 {
+      color: #fff !important;
+      font-weight: 700;
+    }
+
+    .section-title h2::after {
+      background: var(--primary-color) !important;
+    }
+
+    .section-title p {
+      color: var(--text-muted);
+    }
+
+    /* Cards & Boxes */
+    .icon-box,
+    .box,
+    .accordion-list li,
+    .member {
+      background: var(--bg-card) !important;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 16px !important;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    }
+
+    .icon-box:hover,
+    .box:hover,
+    .member:hover {
+      transform: translateY(-10px);
+      border-color: rgba(13, 148, 90, 0.3);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4) !important;
+    }
+
+    .icon-box h4 a,
+    .box h3,
+    .member h4 {
+      color: #fff !important;
+    }
+
+    .icon-box p,
+    .box p,
+    .member p,
+    .member span {
+      color: var(--text-muted) !important;
+    }
+
+    .icon-box .icon {
+      background: rgba(13, 148, 90, 0.1) !important;
+    }
+
+    .icon-box .icon i {
+      color: var(--primary-color) !important;
+    }
+
+    .icon-box:hover .icon {
+      background: var(--primary-color) !important;
+    }
+
+    .icon-box:hover .icon i {
+      color: #fff !important;
+    }
+
+    /* Accordion Customization */
+    .accordion-list a {
+      color: #fff !important;
+    }
+
+    .accordion-list a.collapsed {
+      color: var(--text-main) !important;
+    }
+
+    .accordion-list a:hover {
+      color: var(--primary-color) !important;
+    }
+
+    .accordion-list span {
+      color: var(--primary-color) !important;
+    }
+
+    /* Fix legacy text overrides */
+    p {
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    ul {
+      color: var(--text-main);
+    }
+
+    /* Buttons */
+    .btn-learn-more {
+      color: var(--primary-color) !important;
+      border-color: var(--primary-color) !important;
+      border-radius: 50px !important;
+      font-weight: 600 !important;
+    }
+
+    .btn-learn-more:hover {
+      background: var(--primary-color) !important;
+      color: #fff !important;
+      box-shadow: 0 8px 20px rgba(13, 148, 90, 0.3);
+    }
+
+    /* Team Section specific fix */
+    .member .social {
+      background: rgba(255, 255, 255, 0.05) !important;
+    }
+
+    .member .social a {
+      color: var(--text-muted) !important;
+    }
+
+    .member .social a:hover {
+      color: var(--primary-color) !important;
+    }
+
+    /* Pricing overrides for Vision/Mission */
+    .pricing .box h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .pricing .box ul i {
+      color: var(--primary-color) !important;
+    }
+
+    .pricing .featured {
+      background: linear-gradient(145deg, var(--bg-card), rgba(13, 148, 90, 0.1)) !important;
+      border: 1px solid var(--primary-color) !important;
+    }
+
+    /* Footer */
+    #footer {
+      background: var(--bg-dark) !important;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    #footer .footer-top {
+      background: transparent !important;
+    }
+
+    #footer h3,
+    #footer h4 {
+      color: #fff !important;
+    }
+
+    #footer p,
+    #footer ul li,
+    #footer a {
+      color: var(--text-muted) !important;
+    }
+
+    #footer a:hover {
+      color: var(--primary-color) !important;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Hide empty portfolio elements if any */
+    .portfolio-info h4:empty {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -52,53 +407,64 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="index.html"> <font color="green">BACKGROUND OF PHYMATICS CHAMPIONS CLUB</font></a></h1><H1><MARQUEE><FONT SIZE="5"><FONT COLOR="creams"> WELCOME TO PHYMATICS CHAMPIONS CLUB </FONT COLOR></FONT SIZE></MARQUEE>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <h1 class="logo mr-auto"><a href="index.html">PHYMATICS<span>.</span></a></h1>
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html"><font color="blue">Home</font></a></li>
-   
-          <li><a href="#about"><font color="blue">About</font></a></li>
-          <li><a href="#services"><font color="blue">Services</font></a></li>
-          <li><a href="#team"><font color="blue">Team</font></a></li>
-          </li>
-          <li><a href="#contact"><font color="blue">Contact</font></a></li>
-
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
 
-      <a href="#about" class="get-started-btn scrollto"><font color="light blue">Get Started</font></a>
+      <a href="#about" class="get-started-btn scrollto">Discover More</a>
 
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
-
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          "</h1><H1><MARQUEE><FONT SIZE="6"><FONT COLOR="orange">KNOWLEDGE IS POWER, THEREFORE WE ARE CHAMPIONS</FONT COLOR></FONT SIZE></MARQUEE>
-          <h2>The club was founded by Mr. Bazira Dathan         (A professional Physics and Mathematics teacher), It begun in 2016 </h2
-          >
-<h3><font color="cream"> Phymatics comes from two words that is;  </font color>
-		  <font color="#00CC33"
-                    <li> Phy-physics and 
-		   matics-mathematics</li></font color> </h3>
+      <div class="row align-items-center">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+          data-aos="fade-up" data-aos-delay="200">
 
+          <div class="hero-glass-badge">
+            <i class="fas fa-bolt mr-2"></i> Welcome to Phymatics
+          </div>
 
-        
+          <h1>Knowledge is Power.<br>Therefore We Are Champions.</h1>
+
+          <h2>Established in 2016 by Mr. Bazira Dathan, we are dedicated to academic excellence and cooperative learning
+            in the core sciences.</h2>
+
+          <div class="hero-subject-pills">
+            <div class="subject-pill">
+              <i class="fas fa-atom"></i>
+              <span>Physics</span>
+            </div>
+            <div class="subject-pill">
+              <i class="fas fa-square-root-variable"></i>
+              <span>Mathematics</span>
+            </div>
+          </div>
+
+          <div class="d-flex mt-3">
+            <a href="#about" class="btn-get-started scrollto">Explore Our Club</a>
+          </div>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="assets/img/why-us.jpg" class="img-fluid animated" alt="">
+
+        <div class="col-lg-6 order-1 order-lg-2 hero-img text-center" data-aos="zoom-in" data-aos-delay="300">
+          <img src="assets/img/why-us.jpg" class="img-fluid" alt="Phymatics Discussion"
+            style="box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); border: 2px solid rgba(255,255,255,0.1);">
         </div>
       </div>
-      
     </div>
-  
   </section><!-- End Hero -->
+
+  <main id="main">
 
     <!-- ======= About Us Section ======= -->
     <section id="about" class="about">
@@ -106,28 +472,34 @@
 
         <div class="section-title">
           <h2>About Us</h2>
+          <p>Discover the history and purpose behind the Phymatics Champions Club.</p>
         </div>
 
         <div class="row content">
           <div class="col-lg-6">
             <p>
-              Phymatics Champions Club is an academic club that brings students together to discuss ideas and concepts in Mathematics and Physics. Discussions are led by the general discussant. And contributions or participations are open to the members of the club present.
- 
+              Phymatics Champions Club is an academic club that brings students together to discuss ideas and concepts
+              in <strong>Mathematics</strong> and <strong>Physics</strong>. Discussions are led by the general
+              discussant. Contributions and participations are fully open to all members of the club present.
             </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> Aim at academic improvement</li>
-              <li><i class="ri-check-double-line"></i>Aiming at collaboration and cooperation</li>
-              <li><i class="ri-check-double-line"></i>Improving on our communication skills</li>
-              <li><i class="ri-check-double-line"></i>Improving our creativity and problem solving skills</li>
+            <ul class="mt-4">
+              <li><i class="ri-check-double-line text-success"></i> Aiming at continuous academic improvement</li>
+              <li><i class="ri-check-double-line text-success"></i> Fostering collaboration and cooperation</li>
+              <li><i class="ri-check-double-line text-success"></i> Improving our critical communication skills</li>
+              <li><i class="ri-check-double-line text-success"></i> Enhancing creativity and problem-solving abilities
+              </li>
             </ul>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <p>
-              Phymatics champions club welcomes everyone to join at no cost.
-             Certificates are issued out every year for the best participants and to the out going carbinet for the great services provided
-             
+              Phymatics Champions Club welcomes everyone to join at <strong>no cost</strong>. We believe knowledge
+              should be accessible to all who seek it.
             </p>
-            <a href="#services" class="btn-learn-more">Learn More</a>
+            <p>
+              Outstanding participants and the outgoing cabinet are awarded certificates annually for their dedicated
+              services and active involvement in shaping brilliant minds.
+            </p>
+            <a href="#why-us" class="btn-learn-more scrollto mt-3">Learn More</a>
           </div>
         </div>
 
@@ -143,37 +515,44 @@
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
 
             <div class="content">
-              <h3> <strong>PCC was created to provide an academic discusion platform aiming at improving academic performance and problem solving skills.</strong></h3>
+              <h3><strong>Empowering Academic Discussions</strong></h3>
               <p>
-                <strong><font color="green"><font size="4"> THE TARGET GROUPS </strong></font size></font>
+                PCC was created to provide a robust academic discussion platform aiming at improving academic
+                performance and problem-solving skills across various student demographics.
               </p>
+              <h4 class="mt-4 mb-3" style="color: var(--primary-color);">Our Target Groups</h4>
             </div>
 
             <div class="accordion-list">
               <ul>
                 <li>
-                  <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span> FIRST GROUP <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span> Core Assistance
+                    Seekers <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
                     <p>
-                      Weak Students in physics and mathematics.
+                      Students needing foundational support in Physics and Mathematics to strengthen their basic
+                      understanding.
                     </p>
                   </div>
                 </li>
 
                 <li>
-                  <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span> SECOND GROUP <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span> Concept specific
+                    Support <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
                     <p>
-                      Ones with challenges in certain topics.
+                      Learners facing challenges in specific, complex topics who need targeted explanatory sessions.
                     </p>
                   </div>
                 </li>
 
                 <li>
-                  <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span> THIRD GROUP <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span> Skill Enhancers
+                    <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
                     <p>
-                       The ones willing to improve there problem solving skills.
+                      Motivated individuals willing to take their problem-solving and critical thinking skills to the
+                      next level.
                     </p>
                   </div>
                 </li>
@@ -183,51 +562,60 @@
 
           </div>
 
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/why-us.jpg");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
+            style='background-image: url("assets/img/why-us.jpg"); border-radius: 20px; box-shadow: -20px 20px 0px rgba(13,148,90,0.1);'
+            data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
         </div>
 
       </div>
     </section><!-- End Why Us Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
+    <section id="services" class="services">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Services Of Phymatics champions club</h2>
-          <p></p><li><MARQUEE><FONT SIZE="3"><FONT COLOR="blue"> Helping each other within our society in enhancing our problem solving skills</FONT COLOR></FONT SIZE></MARQUEE>
+          <h2>Our Services</h2>
+          <p>Helping each other within our society by enhancing core problem-solving capabilities.</p>
         </div>
 
         <div class="row">
           <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Weak Students in physics and mathematics. </a></h4>
-              <p>We help Weak Students in physics and mathematics to improve there problem solving skills </p>
+              <div class="icon"><i class="bx bx-book-reader"></i></div>
+              <h4><a href="">Foundational Help</a></h4>
+              <p>We provide dedicated support to students struggling with basic physics and mathematics, building a
+                strong core foundation.</p>
             </div>
           </div>
 
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
+            data-aos-delay="200">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">  Ones with challenges </a></h4>
-              <p>We help the  Ones with challenges in different areas in any provided topic </p>
+              <div class="icon"><i class="bx bx-brain"></i></div>
+              <h4><a href="">Topic Challenges</a></h4>
+              <p>We dissect complex topics, helping students overcome specific challenges in any provided syllabus area.
+              </p>
             </div>
           </div>
 
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
+            data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">The ones willing. </a></h4>
-              <p> we welcome and work with ones willing to improve there problem solving skills in both physics and mathematics. </p>
-            </div> 
+              <div class="icon"><i class="bx bx-rocket"></i></div>
+              <h4><a href="">Skill Mastery</a></h4>
+              <p>We welcome and work collaboratively with those eager to push their problem-solving limits to advanced
+                levels.</p>
+            </div>
           </div>
 
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in"
+            data-aos-delay="400">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-layer"></i></div>
-              <h4><a href="">COUNSELLING & GUIDANCE</a></h4>
-              <p>We do counselling and guidance for a variety of people who have different challenges in life for their studies and seeking knowlegde inorder to improve their performance.</p>
+              <div class="icon"><i class="bx bx-bulb"></i></div>
+              <h4><a href="">Counselling & Guidance</a></h4>
+              <p>We offer academic counselling to help students navigate study challenges and effectively seek knowledge
+                for better performance.</p>
             </div>
           </div>
 
@@ -236,189 +624,142 @@
       </div>
     </section><!-- End Services Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
+    <!-- ======= Vision/Mission/Goals (was Pricing) ======= -->
+    <section id="pricing" class="pricing section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>PHYMATICS CHAMPIONS CLUB portfolio</h2>
-          <p>.</p>
+          <h2>Core Philosophy</h2>
+          <p>The driving forces behind the Phymatics Champions Club.</p>
         </div>
 
-        <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">App</li>
-          <li data-filter=".filter-card">Card</li>
-          <li data-filter=".filter-web">Web</li>
-        </ul>
+        <div class="row">
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>            </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="box">
+              <h3>Our Mission</h3>
+              <ul>
+                <li><i class="bx bx-check"></i> Bridge the gap between student classes and subject teachers.</li>
+                <li><i class="bx bx-check"></i> Elevate academic performance via peer discussions.</li>
+                <li><i class="bx bx-check"></i> Increase deep concept understanding among students.</li>
+                <li><i class="bx bx-check"></i> Create a safe platform to freely ask about challenging concepts.</li>
+              </ul>
+            </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>            </div>
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>Our Vision & Goals</h3>
+              <ul>
+                <li><i class="bx bx-check"></i> Cultivate a thriving academic discussion ecosystem.</li>
+                <li><i class="bx bx-check"></i> Spark creativity and technical innovation.</li>
+                <li><i class="bx bx-check"></i> Eradicate foundational weaknesses in Math & Physics.</li>
+                <li><i class="bx bx-check"></i> Maintain an endlessly supportive learning environment.</li>
+              </ul>
+            </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>            </div>
-          </div>
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>            </div>
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <h3>Our Activities</h3>
+              <ul>
+                <li><i class="bx bx-check"></i> Source discussion questions and model clear solutions.</li>
+                <li><i class="bx bx-check"></i> Organize scheduled peer-to-peer discussion classes.</li>
+                <li><i class="bx bx-check"></i> Simplify dense theory into digestible concepts.</li>
+                <li><i class="bx bx-check"></i> Inspire students by instilling academic positivity.</li>
+              </ul>
+            </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>            </div>
-          </div>
-
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-7.png" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-x.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-x.jpg" data-gall="portfolioGallery" class="venobox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>            </div>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="assets/img/portfolio/portfolio-7.png" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-7.png" data-gall="portfolioGallery" class="venobox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>            </div>
         </div>
 
       </div>
-    </section><!-- End Portfolio Section -->
+    </section><!-- End Vision Section -->
+
 
     <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
+    <section id="team" class="team">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>LEARDERS OF PHYMATICS CHAMPIONS CLUB;</h2>
-          <p>Top Leaders of Phymatics champions club </p>
+          <h2>Leadership</h2>
+          <p>Meet the top leaders driving the vision of Phymatics Champions Club.</p>
         </div>
 
         <div class="row">
 
           <div class="col-lg-6">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt="Mr. Bazira Dathan"></div>
               <div class="member-info">
-                <h4>Mr.  Bazira Dathan</h4>
-                <span>Patron</span>
-                <p>He is responsible for  approving all major decissions for the club.</p>
-		       <p><figcaption><strong><font color="green">Call On: 0773 554329 & 0756 265671 </font></strong></figcaption>
-                </p>
+                <h4>Mr. Bazira Dathan</h4>
+                <span>Patron & Founder</span>
+                <p>Responsible for approving all major conceptual decisions for the club.</p>
+                <div class="mt-2 text-success" style="font-size: 14px; font-weight: 600;">
+                  <i class="fas fa-phone-alt mr-1"></i> 0773 554329 / 0756 265671
+                </div>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
                   <a href=""><i class="ri-instagram-fill"></i></a>
-                  </div>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-6 mt-4 mt-lg-0">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt="Ahimbisibwe Reagan"></div>
               <div class="member-info">
                 <h4>Ahimbisibwe Reagan</h4>
                 <span>Technical Director</span>
-                <p>He is responsible  for all IT related issues.</p>
-                <p><figcaption><strong><font color="green">Call On: 0702 138799</font></strong></figcaption>
-                </p>
+                <p>Responsible for all IT infrastructure and digital presence matters.</p>
+                <div class="mt-2 text-success" style="font-size: 14px; font-weight: 600;">
+                  <i class="fas fa-phone-alt mr-1"></i> 0702 138799
+                </div>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href="http://facebook.com/reagan wolfy" target="_blank"><i class="fab fa-facebook"></i></a>
-                  <a href="http://instagram.com/Reagan WOLFY"><i class="fab fa-instagram"></i></a>
-                    </div>
+                  <a href="http://facebook.com/reagan%20wolfy" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="http://instagram.com/Reagan%20WOLFY"><i class="fab fa-instagram"></i></a>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt="Mr. Mwadiiki Elvis"></div>
               <div class="member-info">
-                <h4>Mr.Mwadiiki Elvis</h4>
-                <spa>Consultant</span>
-                <p>Reach out to him for any queries or help</p>
-		       <p><figcaption><strong><font color="green">Call On:  0700 750902</font></strong></figcaption>
-                </p>
+                <h4>Mr. Mwadiiki Elvis</h4>
+                <span>Consultant</span>
+                <p>Reach out to him for any operational queries or academic help.</p>
+                <div class="mt-2 text-success" style="font-size: 14px; font-weight: 600;">
+                  <i class="fas fa-phone-alt mr-1"></i> 0700 750902
+                </div>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
                   <a href=""><i class="ri-instagram-fill"></i></a>
-                  </div>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/team-4.jpg" class="img-fluid" alt="Ouma Felix"></div>
               <div class="member-info">
-                <h4></h4>Ouma Felix</h4>
+                <h4>Ouma Felix</h4>
                 <span>Consultant</span>
-                <p>For any assistance reach out to him.</p>
-		       <p><figcaption><strong><font color="green">Call On:  0755 340730</font></strong></figcaption>
-                </p>
+                <p>Available for advanced concept assistance and general guidance.</p>
+                <div class="mt-2 text-success" style="font-size: 14px; font-weight: 600;">
+                  <i class="fas fa-phone-alt mr-1"></i> 0755 340730
+                </div>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
                   <a href=""><i class="ri-instagram-fill"></i></a>
-                   </div>
+                </div>
               </div>
             </div>
           </div>
@@ -428,65 +769,6 @@
       </div>
     </section><!-- End Team Section -->
 
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>OUR VISION</h2>
-          <p>Creating an academic discusion platform aiming at improving academic performance and problem solving skills.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="box">
-              <h3>OUR MISSION</h3>
-              <h4><sup></sup><span></span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> To bridge the gap between the  different classes of students and subject teachers as well.</li>
-                <li><i class="bx bx-check"></i> To improve on the academic performance through discussions</li>
-                <li><i class="bx bx-check"></i> To increase on concept understanding among students</li>
-                <li><i class="bx bx-check"></i> To create a favourable discusion platform where every student feels free to asks about there challenging concepts.</li>
-              </ul>
-               
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="box featured">
-              <h3>OUR GOALS</h3>
-              <h4><sup></sup><span></span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i>To improve on the academic performance through discussions </li>
-                <li><i class="bx bx-check"></i> To increase on concept understanding among students </li>
-                <li><i class="bx bx-check"></i> To improve on the  creativity and innovation of students</li>
-                <li><i class="bx bx-check"></i> Helping out the weak students in Mathematics and physics</li>
-                <li><i class="bx bx-check"></i> To have a favourable discusion platform</li>
-              </ul>
-              
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
-              <h3>OUR ACTIVITIES</h3>
-              <h4><sup></sup><span></span></h4>
-              <ul>
-                <li><i class="bx bx-check"></i> Search for discussion questions and provide understandable solutions and explanatios to the students.</li>
-                <li><i class="bx bx-check"></i> Helping out the weak students in Mathematics and physics </li>
-                <li><i class="bx bx-check"></i> Setting up discussions classes for the students </li>
-                <li><i class="bx bx-check"></i> Simplfying the concepts for easier understanding</li>
-                <li><i class="bx bx-check"></i> Inspiring and encouraging students through implemeting positivity in them</li>
-              </ul>
-               
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Pricing Section -->
 
     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq section-bg">
@@ -494,55 +776,66 @@
 
         <div class="section-title">
           <h2>Frequently Asked Questions</h2>
-          <p> Rational For The Establishment</p>
+          <p>Rational Details for The Establishment</p>
         </div>
 
         <div class="faq-list">
           <ul>
             <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">Why was phymatics champions club started? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse"
+                href="#faq-list-1">Why was Phymatics Champions Club started? <i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
-                <p> Tr. Bazira Dathan decided to start up this descusion club due the difficulty that existed toward students understanding physics and mathematics concepts and saw it of importance if students could gather as a club and have some time to go through the challenging concepts in the above two subjects.It was started so as to equip learners or students with more problem solving skills in both physics and mathematics.</p>
+                <p>Tr. Bazira Dathan decided to start this discussion club due to the widespread difficulty students
+                  faced in understanding physics and mathematics concepts. He saw immense value in gathering students to
+                  collaboratively tackle challenging concepts, equipping them with advanced problem-solving skills.</p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">How is the club organisation Management? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2"
+                class="collapsed">How is the club organization managed? <i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-parent=".faq-list">
-                <p>
-                The club is led by a patron at the top and a carbinet of 20 learders that is led by a club president. other carbinet members include a general discussant, mobilizers,speaker,treasurer, among others.
-              </p>
+                <p>The club is led by a Patron at the top, followed by a cabinet of 20 leaders headed by a club
+                  President. Other cabinet members include a general discussant, mobilizers, speaker, and treasurer,
+                  among others.</p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">What is the main Objective of phymatics champions club? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3"
+                class="collapsed">What is the main objective? <i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-parent=".faq-list">
-                <p>
-                  Our main objective is to  improve on the performance and problem solving skills, creativity and innovation.  </p>
+                <p>Our main objective is to dramatically improve academic performance, critical problem-solving skills,
+                  and to foster creativity and technical innovation.</p>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed"> What does one gain from joining this club?.<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4"
+                class="collapsed"> What does one gain from joining this club? <i
+                  class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-4" class="collapse" data-parent=".faq-list">
-                <p>
-                   <strong> There are plenty of advantanges for joining this club;</strong>      </p>
-                   <ul>Improvement of performance.</ul>
-                   <ul>Improvement in creativity and  innovation.</ul>
-                   <ul>One gains exposure and social connection from fellow students and discusants from different classes.</ul>
-                   <ul>Certificates of membership are issued. </ul>
-                    
-
+                <p><strong>Benefits of joining include:</strong></p>
+                <ul class="pl-4 pb-3">
+                  <li class="mb-2">Significant improvement of academic performance.</li>
+                  <li class="mb-2">Boosts in creativity and innovation.</li>
+                  <li class="mb-2">Exposure and social connection with fellow students across different classes.</li>
+                  <li class="mb-2">Official Certificates of Membership upon completion.</li>
+                </ul>
               </div>
             </li>
 
             <li data-aos="fade-up" data-aos-delay="500">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">What does it cost to join this club?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5"
+                class="collapsed">What does it cost to join this club? <i class="bx bx-chevron-down icon-show"></i><i
+                  class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-5" class="collapse" data-parent=".faq-list">
-                <p>
-                Joining Phymatics Champions Club is free and cost nothing for anyone willing to join this club.   </p>
-              </div> 
+                <p>Joining Phymatics Champions Club is completely <strong>free</strong> and costs nothing for anyone
+                  willing and motivated to learn.</p>
+              </div>
             </li>
 
           </ul>
@@ -556,89 +849,97 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Contact</h2>
-          <p> Contact  information about Phymatics Champion Club (For any assistance)</p>
+          <h2>Contact Us</h2>
+          <p>Reach out for any assistance or information regarding Phymatics Champion Club.</p>
         </div>
 
-        <div class="row">
+        <div class="row align-items-center">
 
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="icofont-google-map"></i>
-                <h4>Location:</h4>
-                <p>Buikwe Town/Buikwe Sub-county/ Buikwe District, (U) </p>
+          <div class="col-lg-6 d-flex align-items-stretch">
+            <div class="info w-100"
+              style="background: var(--bg-card); border-radius: 16px; border: 1px solid rgba(255,255,255,0.05); padding: 40px;">
+              <div class="address mb-4">
+                <i class="icofont-google-map" style="color: var(--primary-color); font-size: 24px;"></i>
+                <h4 style="color: #fff; margin: 10px 0 5px;">Location:</h4>
+                <p>Buikwe Town / Buikwe Sub-county<br>Buikwe District, (U)</p>
               </div>
 
-              <div class="email">
-                <i class="icofont-envelope"></i>
-                <h4>Email:</h4>
-                <p><a href="#" class="#"> baziradathan@gmail.com</p>
+              <div class="email mb-4">
+                <i class="icofont-envelope" style="color: var(--primary-color); font-size: 24px;"></i>
+                <h4 style="color: #fff; margin: 10px 0 5px;">Email:</h4>
+                <p><a href="mailto:baziradathan@gmail.com" class="text-white">baziradathan@gmail.com</a></p>
               </div>
 
               <div class="phone">
-                <i class="icofont-phone"></i>
-                <h4>Call:</h4>
-                <p> <a href="#" class="#">+256773 554329 & 0756265671</p>
+                <i class="icofont-phone" style="color: var(--primary-color); font-size: 24px;"></i>
+                <h4 style="color: #fff; margin: 10px 0 5px;">Call:</h4>
+                <p><a href="tel:+256773554329" class="text-white">+256 773 554329</a> <br>
+                  <a href="tel:+256756265671" class="text-white">+256 756 265671</a>
+                </p>
               </div>
-
-                          </div>
-
+            </div>
           </div>
+
+          <div class="col-lg-6 align-items-stretch" data-aos="fade-left" data-aos-delay="200">
+            <!-- Spacer or decorative element mapping visually to contact -->
+            <div class="d-flex align-items-center justify-content-center h-100 p-5">
+              <div style="font-size: 150px; color: rgba(255,255,255,0.03);">
+                <i class="fas fa-map-marked-alt"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-
-    </div>
-
     <div class="footer-top">
       <div class="container">
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>PHYMATICS CHAMPIONS CLUB</h3>
-            <p><strong><font size="3">
-             Buikwe Town<br>
-             Buikwe Sub-county<br>
-              Buikwe District (u) <br><br>
-              <strong>Phone:</strong> <p> <a href="#" class="#">+256773 554329 & 0756265671</p> <br></font>
-              <strong>Email:</strong><a href="#" class="#">baziradathan@gmail.com<br>
-            </strong></p>
+            <h3>PHYMATICS</h3>
+            <p>
+              Buikwe Town<br>
+              Buikwe Sub-county<br>
+              Buikwe District (U)<br><br>
+              <strong>Phone:</strong> <a href="tel:+256773554329" class="text-muted">+256 773 554329</a><br>
+              <strong>Email:</strong> <a href="mailto:baziradathan@gmail.com"
+                class="text-muted">baziradathan@gmail.com</a><br>
+            </p>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#Home">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#team">Team</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Our Impact</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Aim at academic improvement</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Aiming at collaboration and cooperation</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Improving on our communication skills</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Improving our creativity and problem solving skills</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Aim at academic improvement</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Collaboration & cooperation</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Communication skills</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Creativity & problem solving</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Social Networks</h4>
-            <p>Following us on Our Social Media Below</p>
+            <p>Follow us on our social media platforms to stay updated.</p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
               <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-             
-             
             </div>
           </div>
 
@@ -648,14 +949,10 @@
 
     <div class="container footer-bottom clearfix">
       <div class="copyright">
-        &copy; Copyright <strong><span>Phymatics champions club</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Phymatics Champions Club</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://ivangraphicsmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-        Designed by <a href=" ">Reagan Wolfy</a>
+        Designed by <a href="#" style="color: var(--primary-color); font-weight: bold;">Reagan Wolfy</a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -667,7 +964,6 @@
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/venobox/venobox.min.js"></script>
@@ -676,6 +972,22 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    // Additional micro-interactions
+    $(document).ready(function () {
+      // Remove loading state explicitly if preloader takes too long
+      setTimeout(() => {
+        $('#preloader').fadeOut('slow');
+      }, 1000);
+
+      // Floating animation for pill items
+      const pills = document.querySelectorAll('.subject-pill');
+      pills.forEach((pill, i) => {
+        pill.style.animationDelay = `${0.6 + (i * 0.2)}s`;
+      });
+    });
+  </script>
 
 </body>
 
