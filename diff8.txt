@@ -1,0 +1,12 @@
+﻿diff --git a/index.html b/index.html
+index c69cb28..2d67ed2 100644
+--- a/index.html
++++ b/index.html
+@@ -153,6 +153,7 @@
+       margin-bottom: 20px;
+       background: linear-gradient(to right, #ffffff, #a5b4fc);
+       -webkit-background-clip: text;
++      background-clip: text;
+       -webkit-text-fill-color: transparent;
+       animation: fadeInUp 1s ease-out 0.2s both;
+     }
