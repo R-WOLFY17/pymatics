@@ -1843,7 +1843,7 @@ body {
     background: #e2e8eb;
     color: #fff;
     line-height: 1;
-    padding: 8px 0;
+    padding: 8px 18px;
     margin-right: 4px;
     border-radius: 50%;
     text-align: center;
@@ -1853,7 +1853,7 @@ body {
   }
 
   #footer .footer-top .social-links a:hover {
-    background: #e1e7ea;
+    background: #1ba6ec;
     color: #fff;
     text-decoration: none;
   }
